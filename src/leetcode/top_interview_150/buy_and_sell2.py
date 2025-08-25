@@ -8,7 +8,7 @@ class Solution(object):
         max_final = 0
 
         while i < len(prices):
-            if prices[i-1] < prices[i]:
-                max_final += prices[i] - prices[i-1]
+            if prices[i - 1] < prices[i]:
+                max_final += prices[i] - prices[i - 1]
             i += 1
         return max_final
