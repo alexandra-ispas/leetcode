@@ -10,7 +10,7 @@ class Solution(object):
 
         i = 1
         while i < len(ratings):
-            if ratings[i] == ratings[i-1]:
+            if ratings[i] == ratings[i - 1]:
                 i += 1
                 continue
 
@@ -31,4 +31,3 @@ class Solution(object):
             candy -= min(peak, valley)
 
         return candy
-

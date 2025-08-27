@@ -18,5 +18,3 @@ class Solution(object):
             pref *= nums[i]
 
         return result
-
-
