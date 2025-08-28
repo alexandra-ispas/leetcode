@@ -1,3 +1,6 @@
+import sys
+
+
 class Solution(object):
     def minSubArrayLen(self, target, nums):
         """
