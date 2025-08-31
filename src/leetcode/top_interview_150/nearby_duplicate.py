@@ -7,14 +7,9 @@ class Solution(object):
         """
         mappings = {}
 
-        i = 0
-        while i < len(nums):
-            n = nums[i]
-            if n in mappings.keys():
-                value = mappings[n]
-                if abs(i - value) <= k:
-                    return True
+        for i, n in enumerate(nums):
+            if n in mappings and i - mappings[n] <= k:
+                return True
             mappings[n] = i
-            i += 1
-            print(mappings)
+
         return False
