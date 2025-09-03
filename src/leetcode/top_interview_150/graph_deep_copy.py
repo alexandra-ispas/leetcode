@@ -6,6 +6,7 @@ class Node(object):
         self.neighbors = neighbors if neighbors is not None else []
 """
 
+
 class Solution(object):
     def __init__(self):
         self.mapping = {}
@@ -28,4 +29,3 @@ class Solution(object):
             new_node.neighbors.append(self.cloneGraph(neigh))
 
         return new_node
-
