@@ -34,6 +34,16 @@ def read():
             print(Person(**dict(json.loads(line.strip()))))
 
 
+def read_from_stdin():
+    import sys
+
+    while True:
+        line = sys.stdin.readline().strip()
+        if line == "#":
+            break
+        print(line)
+
+
 def main():
     read()
 
